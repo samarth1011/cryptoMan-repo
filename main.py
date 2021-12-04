@@ -13,7 +13,7 @@ print("Waiting for message...")
 # print(client.get_me().stringify())
 # with client:
 #     client.get_messages('@SamarthGodase', limit=100)
-@client.on(events.NewMessage(chats='@SamarthGodase'))
+@client.on(events.NewMessage(chats='@Trading_Bitcoin_Signals_Tips'))
 async def my_event_handler(event):
     try:
         newMessage = event.message.message
@@ -50,10 +50,10 @@ async def my_event_handler(event):
         if '❗️Attention, everybody!' in newMessage:
             newMessage = newMessage + ' \n\n SignUp & trade with that account to earn more profits - https://bit.ly/3xUsD7x \n\n Write me -  https://t.me/cryptoMan1011'
             print( newMessage)
-        await client.send_message('@cryptoMan1011',newMessage)
+        await client.send_message('@binomo_olymptrade_VIP_trading',newMessage)
        
     except:
-        await client.send_message('@cryptoMan1011',event.message)
+        await client.send_message('@@binomo_olymptrade_VIP_trading',event.message)
     
 
 client.start()
