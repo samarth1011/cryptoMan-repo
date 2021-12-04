@@ -38,8 +38,8 @@ async def my_event_handler(event):
         if "https://t.me/Joseph_singer_pro" in newMessage:
             newMessage = newMessage.replace( "https://t.me/Joseph_singer_pro", 'https://t.me/cryptoMan1011')
 
-        if "Sign up" in newMessage:
-            newMessage = newMessage.replace( "Sign up", 'SignUp & trade with that account to earn more profits\n')
+        # if "Sign up" in newMessage:
+        #     newMessage = newMessage.replace( "Sign up", 'SignUp & trade with that account to earn more profits\n')
         
         if '"DOWN"' in newMessage:
             print("replacing..")
